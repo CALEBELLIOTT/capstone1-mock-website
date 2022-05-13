@@ -1,19 +1,74 @@
 :root {
-  --primary-green: rgb(22, 71, 15);
+  --primary-green: #198754;
+  --secondary-green: #125f3b;
+  --light-grey: rgb(98, 98, 98);
+  --lighter-grey: rgb(225, 225, 225);
+}
+
+* {
+  margin: 0;
 }
 
 .background-primary {
   background-color: var(--primary-green);
 }
 
+.logo-img {
+  height: 4rem;
+}
+
 .hero-row {
   background-image: url(./Resources/hero-img.jpg);
   background-size: cover;
   object-fit: cover;
-  height: 60vh;
+  height: 75vh;
   width: auto;
 }
 
 .border-left {
-  border-left: 1em var(--primary-green) solid;
+  border-left: 1em var(--secondary-green) solid;
+}
+
+.percentage-bar-card {
+  transform: translateY(5rem);
+}
+
+.promise-text {
+  transform: translateY(5rem);
+  padding-top: 3rem;
+  padding: 4rem;
+}
+
+.elk-img {
+  object-fit: cover;
+  height: 50em;
+  padding: 3rem;
+}
+
+.body-text {
+  line-height: 2rem;
+  letter-spacing: 150%;
+  color: var(--light-grey)
+}
+
+
+.background-lighter-grey {
+  background-color: var(--lighter-grey);
+}
+
+@media (max-width: 769px) {
+  .percentage-bar-card {
+    transform: translateY(0);
+  }
+
+  .elk-img {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .promise-text {
+    transform: translateY(0);
+    padding: 1rem;
+  }
+
 }

@@ -15,13 +15,14 @@
 <body>
   <header class="container-flex">
     <div class="row background-primary text-light">
-      <div class="col-6 col-md-4">
-        <h1> <i class="mdi mdi-pine-tree"></i> National Park Service</h1>
+      <div class="col-9 col-md-6 d-flex align-items-center">
+        <img class="logo-img p-2" src="./Resources/logo.png" alt="">
+        <h1>National Park Service</h1>
       </div>
     </div>
     <div class="row hero-row d-flex">
-      <div class="col-12 col-md-4 align-self-center ps-5">
-        <div class="card">
+      <div class="col-12 col-md-4 align-self-center">
+        <div class="card p-5 mt-3 ms-2 shadow">
           <h3>SEND US A MESSAGE</h3>
           <form action="" class="row g-3">
             <div class="col-12">
@@ -49,10 +50,10 @@
         </div>
       </div>
       <!-- TODO hide this when screen size is small -->
-      <div class="col-md-8 align-items-center d-flex">
+      <div class="col-md-8 align-items-center d-none d-md-flex">
         <div class="p-5 border-left">
-          <h2>This is text over an image</h2>
-          <p>This is some more detailed information</p>
+          <h2>The National Park Service</h2>
+          <p class="body-text">Come explore America's natural treasures</p>
         </div>
       </div>
     </div>
@@ -60,45 +61,91 @@
 
   <main class="container-flex">
     <!-- NOTE row with overflow card -->
-    <div class="row">
-      <div class="col-md-6 order-md-1 order-2">
+    <div class="row background-primary text-light">
+      <div class="col-md-6 order-md-first order-2">
         <h1>If you love trees, this is the place for you</h1>
+        <p class="body-text">This is some more information about trees and tree related things</p>
       </div>
       <div class="col-md-6">
-        <div class="card">
-          <div class="progress">
-            <i class="mdi mdi-horse-human"></i>
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+        <div class="card m-2 percentage-bar-card shadow">
+          <div class="progress m-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+          <div class="progress m-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 98%" aria-valuenow="25"
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+          <div class="progress m-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 82%" aria-valuenow="25"
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+          <div class="progress m-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25"
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+          <div class="progress m-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 67%" aria-valuenow="25"
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-9"></div>
+    <!-- NOTE image plus text row -->
+    <div class="row d-flex">
+      <div class="col-md-3">
+        <img src="./Resources/Elk.jpg" class="elk-img img-fluid" alt="">
+      </div>
+      <div class="col-md-8">
+        <div class="promise-text">
+          <h1><i class="mdi mdi-shield-check"></i> Our Promise To You</h1>
+          <p>We will protect you from all of the elk in the parks</p>
+          <p class="body-text pt-3">That's right. The elk in the park account for 95% of deaths dating back to 1995. On
+            average, there are 20,000
+            deaths yearly from these dangerous predators. Humans at one point made up 30% of these animal's diets. We
+            are
+            proud to announce that as of last year, these deaths plummeted to a mere 27%. The park is continuing to take
+            action against this invasive and dangerous species. <br> <br> We have spreadsheets and statistics on all of
+            the deaths from 1995 to present in addition to recommended precautionary measures for those entering the
+            parks.</p>
+          <button class="btn btn-success"> Learn More</button>
+        </div>
+      </div>
     </div>
     <!-- NOTE reviewer row -->
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
+    <div class="row background-lighter-grey">
+      <div class="col-md-4 p-3">
+        <div class="card p-3 mx-2 text-center mt-5 mb-5">
+          <h3><i class="mdi mdi-format-quote-open"></i><br>Caleb Elliott</h3>
+          <p class="body-text">I personally love national parks! Me and my family will make the trip to go to them
+            every single year! <br><br> My grandma did pass last year due to an elk attack, but hey- that's the circle
+            of
+            life.</p>
+          <p class="text-success">I will be back for sure with my other grandma!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 mx-2 text-center mt-5 mb-5">
+          <h1><i class="mdi mdi-star-circle"></i><i class="mdi mdi-star-circle"></i><i class="mdi mdi-star-circle"></i>
+          </h1>
+          <h3><i class="mdi mdi-format-quote-open"></i><br>Caleb Elliott</h3>
+          <p class="body-text">I personally love national parks! Me and my family will make the trip to go to them
+            every single year! <br><br> My grandma did pass last year due to an elk attack, but hey- that's the circle
+            of
+            life.</p>
+          <p class="text-success">I will be back for sure with my other grandma!</p>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card p-3 mx-2 text-center mt-5 mb-5">
+          <h3><i class="mdi mdi-format-quote-open"></i><br>Caleb Elliott</h3>
+          <p class="body-text">I personally love national parks! Me and my family will make the trip to go to them
+            every single year! <br><br> My grandma did pass last year due to an elk attack, but hey- that's the circle
+            of
+            life.</p>
+          <p class="text-success">I will be back for sure with my other grandma!</p>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-12"></div>
@@ -107,8 +154,18 @@
   </main>
 
   <footer class="container-flex">
-    <div class="row">
-      <div class="col-12"></div>
+    <div class="row bg-success d-flex">
+      <div class="col-12 align-self-center p-5">
+        <div class="mx-5">
+          <h1>Come Visit the parks! For more information visit our actual website!</h1>
+          <p>This is not a real website. This website has no affiliation with the National Parks Service. </p>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-8 text-center">
+        <p>contact information-- |email: caleb123elliott@gmail.com| |Phone: (208)401-5955| |Fax: haha|</p>
+      </div>
     </div>
   </footer>
 </body>
