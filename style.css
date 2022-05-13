@@ -1,0 +1,19 @@
+:root {
+  --primary-green: rgb(22, 71, 15);
+}
+
+.background-primary {
+  background-color: var(--primary-green);
+}
+
+.hero-row {
+  background-image: url(./Resources/hero-img.jpg);
+  background-size: cover;
+  object-fit: cover;
+  height: 60vh;
+  width: auto;
+}
+
+.border-left {
+  border-left: 1em var(--primary-green) solid;
+}
