@@ -42,7 +42,7 @@
 .elk-img {
   object-fit: cover;
   height: 50em;
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .body-text {
