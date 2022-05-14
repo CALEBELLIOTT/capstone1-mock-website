@@ -51,6 +51,10 @@
   color: var(--light-grey)
 }
 
+h1 {
+  font-family: 'Koulen', cursive;
+}
+
 
 .background-lighter-grey {
   background-color: var(--lighter-grey);
